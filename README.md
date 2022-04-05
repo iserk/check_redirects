@@ -30,7 +30,7 @@ Make sure to put your own CSV file with redirects in the same directory as the s
 
 ## Usage
 ```
-source venv/bin/activate
-python check_redirects.py
+source venv/bin/activate  # Not needed if the venv is already activated
+python main.py
 ```
 

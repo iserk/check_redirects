@@ -2,8 +2,8 @@ import requests
 import csv
 from urllib.parse import urljoin
 
-BASE_URL = 'http://0.0.0.0:5000/';   # Leave empty if URLs are absolute; otherwise, use http://www.example.com/ format
-
+BASE_URL = 'http://0.0.0.0:5000/'   # Leave empty if URLs are absolute; otherwise, use http://www.example.com/ format
+CSV_FILE = 'test_redirects.csv'
 
 def read_csv(filename: str) -> list:
     url_list = []
@@ -44,7 +44,7 @@ def check_redirects(url_list):
 
 
 def main():
-    url_list = read_csv('test_redirects.csv')
+    url_list = read_csv(CSV_FILE)
     check_redirects(url_list)
 
 
